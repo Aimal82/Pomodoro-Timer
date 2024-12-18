@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* background: linear-gradient(-45deg, #31394c, #7a7f84, #ededed); */
+    background: linear-gradient(-45deg, #06141b,#11212d,#253745,#4a5c6a,#9ba8ab,#ccd0cf);
+    background-size: 400% 400%;
+    animation: bg 12s ease infinite;
+}
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+
+    }
+    50%{
+        background-position: 100% 100%;
+
+    }
+    100%{
+        background-position: 0% 50%;
+
+    }
+}
+.heading {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Kanit;
+    color: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Kanit;
+    color: white;
+    font-size: 350px;
+    position: absolute; 
+    bottom: 130px; 
+    left: 270px; 
+    padding: 0;
+    margin: 0;
+}
+
+.line {
+    display: flex;
+    border-top: 1px solid white;
+    margin: 0;
+    width: 600px;
+    top: 350px;
+    position: relative;
+    left: 350px;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 540px;
+    left: 580px;
+}
+#start, #reset {
+    border:1px solid white;
+    border-radius: 900px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: kanit;
+    color: white;
+}
+#start {
+    position: relative;
+    right: 50px;
+}
+#restart {
+    position: relative;
+    right: 150px;
+}
+.settings {
+    position: absolute;
+    top: 600px;
+    font-family: kanit;
+    color: white;
+}
+#work-time, #break-time {
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+p , #session-count {
+    cursor: pointer;
+    background-color: transparent;
+    font-family: kanit;
+    color: white;
+    position: absolute;
+}
+
+
+
+
+
